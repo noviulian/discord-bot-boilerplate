@@ -1,10 +1,10 @@
 import { Command } from '../../client';
 
 export default new Command({
-    name: 'ping',
-    description: 'Pong!',
+    name: 'test',
+    description: 'Test command',
     defaultMemberPermissions: ['BanMembers'],
     run: async ({ interaction }) => {
-        interaction.followUp('Pong!');
+        interaction.followUp('bot is working');
     },
 });
